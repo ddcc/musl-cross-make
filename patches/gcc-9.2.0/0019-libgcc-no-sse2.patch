@@ -1,0 +1,13 @@
+diff --git a/libgcc/Makefile.in b/libgcc/Makefile.in
+index ea390a5..ac73fd4 100644
+--- a/libgcc/Makefile.in
++++ b/libgcc/Makefile.in
+@@ -851,7 +851,7 @@ endif
+ # libgcc_eh.a, only LIB2ADDEH matters.  If we do, only LIB2ADDEHSTATIC and
+ # LIB2ADDEHSHARED matter.  (Usually all three are identical.)
+ 
+-c_flags := -fexceptions
++c_flags := -fexceptions -mno-sse2
+ 
+ ifeq ($(enable_shared),yes)
+ 
